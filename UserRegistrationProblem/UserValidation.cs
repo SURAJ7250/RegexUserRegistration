@@ -53,5 +53,14 @@ namespace UserRegistrationProblem
             bool result = regex.IsMatch(password);
             Console.WriteLine(result);
         }
+        //UC6
+        //Should  have at least 1 Upper Case
+        public const string UPPERCASE_REGEX = "^(?=.*[A-Z]).{8,}$";
+        public void ValidationUppercase(string Uppercase)
+        {
+            Regex regex = new Regex(UPPERCASE_REGEX);
+            bool result = regex.IsMatch(Uppercase);
+            Console.WriteLine(result);
+        }
     }
 }
