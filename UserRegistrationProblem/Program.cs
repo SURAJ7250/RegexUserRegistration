@@ -22,6 +22,10 @@
             string phonenumber = Console.ReadLine();
             userValidation.ValidationPhoneNumber(phonenumber);
 
+            Console.WriteLine("Enter password 8 characters");
+            string password=Console.ReadLine();
+            userValidation.ValidationPassword(password);
+
         }
     }
 }

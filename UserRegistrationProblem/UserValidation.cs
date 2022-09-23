@@ -45,5 +45,13 @@ namespace UserRegistrationProblem
             bool result = regex.IsMatch(phonenumber);
             Console.WriteLine(result);
         }
+        //UC5
+        public const string PASSWORD_REGEX = "[a-z,A-Z,0-9]{8,}$";
+        public void ValidationPassword(string password)
+        {
+            Regex regex = new Regex(PASSWORD_REGEX);
+            bool result = regex.IsMatch(password);
+            Console.WriteLine(result);
+        }
     }
 }
