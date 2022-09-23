@@ -55,7 +55,7 @@ namespace UserRegistrationProblem
         }
         //UC6
         //Should  have at least 1 Upper Case
-        public const string UPPERCASE_REGEX = "^(?=.*[A-Z]).{8,}$";
+        public const string UPPERCASE_REGEX = "^[A-Z]{1}[a-z]{7}$";
         public void ValidationUppercase(string Uppercase)
         {
             Regex regex = new Regex(UPPERCASE_REGEX);

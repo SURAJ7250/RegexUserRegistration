@@ -29,6 +29,7 @@
             Console.WriteLine("Enter password 1 uppercase");
             string Uppercase = Console.ReadLine();
             userValidation.ValidationUppercase(Uppercase);
+
         }
     }
 }
