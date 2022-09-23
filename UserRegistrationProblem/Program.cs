@@ -12,11 +12,15 @@
 
             Console.WriteLine("Enter The Last Name: ");
             string lastname = Console.ReadLine();
-            userValidation.ValidationFirstName(lastname);
+            userValidation.ValidationLastName(lastname);
 
             Console.WriteLine("Enter Email: ");
             string email = Console.ReadLine();
-            userValidation.ValidationFirstName(email);
+            userValidation.ValidationEmail(email);
+
+            Console.WriteLine("Enter PhoneNumber: ");
+            string phonenumber = Console.ReadLine();
+            userValidation.ValidationPhoneNumber(phonenumber);
 
         }
     }
