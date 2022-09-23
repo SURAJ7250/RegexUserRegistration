@@ -10,11 +10,21 @@ namespace UserRegistrationProblem
     public class UserValidation
     {
         //UC1
+        //FirstName the First Letter Should Capital and minimum 3 Character
         public const string FIRST_NAME_REGEX = "^[A-Z]{1}[a-zA-Z]{2}$";
         public void ValidationFirstName(string firstname)
         {
             Regex regex = new Regex(FIRST_NAME_REGEX);
             bool result = regex.IsMatch(firstname);
+            Console.WriteLine(result);
+        }
+        //UC2
+        //LastName the First Letter Should Capital and minimum 3 Character
+        public const string LASTNAME_REGEX= "^[A-Z]{1}[a-zA-Z]{2}$";
+        public void ValidationLastName(string lastname)
+        {
+            Regex regex = new Regex(LASTNAME_REGEX);
+            bool result = regex.IsMatch(lastname);
             Console.WriteLine(result);
         }
     }
