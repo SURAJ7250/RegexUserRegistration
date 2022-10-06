@@ -25,14 +25,6 @@
             Console.WriteLine("Enter password 8 characters");
             string password=Console.ReadLine();
             userValidation.ValidationPassword(password);
-
-            Console.WriteLine("Enter password 1 uppercase");
-            string Uppercase = Console.ReadLine();
-            userValidation.ValidationUppercase(Uppercase);
-
-            Console.WriteLine("Enter 1 numeric password");
-            string numericpassword=Console.ReadLine();
-            userValidation.ValidationNumericPassword(numericpassword);
         }
     }
 }
