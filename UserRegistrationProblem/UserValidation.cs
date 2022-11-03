@@ -11,7 +11,7 @@ namespace UserRegistrationProblem
     {
         public static string firstname;
         //UC13
-        //Use Lambda Expression to validate User Entry
+        //Use Lambda Expression to validate User FirstName
         public const string FIRST_NAME_REGEX = "^[A-Z]{1}[a-zA-Z]{2}$";
         public void ValidationFirstName(string firstname)
         {
@@ -31,6 +31,7 @@ namespace UserRegistrationProblem
                 return "Firstname is invalid";
             }
         };
+        //Use Lambda Expression to validate User LastName
         public const string LASTNAME_REGEX = "^[A-Z]{1}[a-zA-Z]{2}$";
         public void ValidationLastName(string lastname)
         {
@@ -50,6 +51,7 @@ namespace UserRegistrationProblem
                 return "lastname is invalid";
             }
         };
+        //Use Lambda Expression to validate User Email
         public const string EMAIL_REGEX = "^[a-z0-9]+[@][a-zA-Z]+[.][a-zA-Z]{2,3}$";
         public void ValidationEmail(string email)
         {
@@ -69,6 +71,7 @@ namespace UserRegistrationProblem
                 return "email is invalid";
             }
         };
+        //Use Lambda Expression to validate User MobileNumber
         public const string MOBILENUMBER_REGEX = "^[0-9]+[-]+[0-9]{10}$";
         public void ValidationPhoneNumber(string phonenumber)
         {
@@ -88,6 +91,7 @@ namespace UserRegistrationProblem
                 return "phonenumber is invalid";
             }
         };
+        //Use Lambda Expression to validate User Password
         public const string PASSWORD_REGEX = "[a-z,A-Z,0-9]{8,}$";
         public void ValidationPassword(string password)
         {
