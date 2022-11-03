@@ -1,30 +1,28 @@
 ﻿namespace UserRegistrationProblem
 {
-    internal class Program
+    public class Program
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Welcome to User Registration Problems Statement Using REGEX");
-            UserValidation userValidation=new UserValidation();
-            Console.WriteLine("Enter The First Name: ");
-            string firstname = Console.ReadLine();
-            userValidation.ValidationFirstName(firstname);
+            Console.WriteLine("Enter the firstname: ");
+            string FirstName = Console.ReadLine();
+            Console.WriteLine(UserValidation.CheckFirstName(FirstName));
 
-            Console.WriteLine("Enter The Last Name: ");
+            Console.WriteLine("Enter the lastname: ");
             string lastname = Console.ReadLine();
-            userValidation.ValidationLastName(lastname);
+            Console.WriteLine(UserValidation.CheckLastName(lastname));
 
-            Console.WriteLine("Enter Email: ");
+            Console.WriteLine("Enter the email: ");
             string email = Console.ReadLine();
-            userValidation.ValidationEmail(email);
+            Console.WriteLine(UserValidation.checkEmail(email));
 
-            Console.WriteLine("Enter PhoneNumber: ");
+            Console.WriteLine("Enter the phonenumber: ");
             string phonenumber = Console.ReadLine();
-            userValidation.ValidationPhoneNumber(phonenumber);
+            Console.WriteLine(UserValidation.checkMobileNumber(phonenumber));
 
-            Console.WriteLine("Enter password 8 characters");
-            string password=Console.ReadLine();
-            userValidation.ValidationPassword(password);
+            Console.WriteLine("Enter the password: ");
+            string password = Console.ReadLine();
+            Console.WriteLine(UserValidation.checkPassword(password));
         }
     }
 }
